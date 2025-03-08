@@ -1,1 +1,79 @@
 /*  your css code here. If applicable */
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Book Library Container */
+.book-library {
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.book-library h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Book Block Styles */
+.book {
+    display: inline-block;
+    width: 30%;
+    background-color: #ffffff;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 10px;
+    text-align: center;
+}
+
+.book img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.book h2 {
+    font-size: 20px;
+    color: #333333;
+    margin: 15px 0;
+}
+
+.book .author {
+    color: #777777;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.book .price-block {
+    background-color: #2ecc71;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .book {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .book {
+        width: 90%;
+    }
+}
